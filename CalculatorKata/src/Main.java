@@ -6,6 +6,8 @@ public class Main {
             String decision = cals(scanner.nextLine());
             if (decision == null) {
                 throw new Exception();
+            } else if (decision.equals("")) {
+                throw new Exception();
             } else {
                 System.out.println(decision);
                 romanNumbers = 0;
